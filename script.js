@@ -1,5 +1,5 @@
 /* ===== CONFIG: ubah data di sini ===== */
-const CONFIG={email:"sirullahialakbar2006@mail.ugm.ac.id",linkedin:"https://linkedin.com/in/sirulahialakbar",github:"https://github.com/Karlfritz67",cvUrl:"", photo:"foto sirul.jpg"};
+const CONFIG={email:"sirullahialakbar2006@mail.ugm.ac.id",linkedin:"https://linkedin.com/in/sirulahialakbar",github:"https://github.com/SirulahiAlAkbar",cvUrl:"", photo:"foto sirul.jpg"};
 const INFO=[
  ["Bidang Minat","Elektronika, robotika, sensor, dan otomasi."],
  ["Teknologi yang Dipelajari","Arduino, Processing, dan Wokwi. Sedang belajar Python dasar dan berbagai alat ukur."],
