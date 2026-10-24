@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sirulahi Al Akbar – Portofolio Teknologi Rekayasa Elektro</title>
+<meta name="description" content="Portofolio Sirulahi Al Akbar, mahasiswa Teknologi Rekayasa Elektro: Arduino, robotika, sensor, dan otomasi.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bar" aria-hidden="true"></div>
+<nav aria-label="Navigasi utama"><div class="wrap nav">
+<a class="logo" href="#beranda" aria-label="Sirulahi Al Akbar, ke beranda">SA</a>
+<button class="icon-btn" id="burger" aria-label="Buka menu" aria-expanded="false" aria-controls="links">☰</button>
+<div class="links" id="links">
+<a href="#beranda">Beranda</a><a href="#tentang">Tentang</a><a href="#keahlian">Keahlian</a><a href="#proyek">Proyek</a><a href="#kontak">Kontak</a>
+</div>
+<button class="icon-btn" id="theme" aria-label="Ganti tema" title="Ganti tema">◐</button>
+</div></nav>
+
+<main>
+<section class="hero" id="beranda"><div class="wrap hero-g">
+<div>
+<div class="status"><span class="dot"></span>Sedang Mengembangkan Keterampilan</div>
+<h1 class="name">Sirulahi<br><span>Al Akbar</span></h1>
+<p class="head">Mengubah Ide Menjadi Solusi Nyata.</p>
+<p class="sub">Mahasiswa Teknologi Rekayasa Elektro | Arduino, Embedded Systems &amp; Automation</p>
+<p class="desc">Saya tertarik mengembangkan solusi berbasis elektronika, mikrokontroler, sensor, dan pemrograman. Saya senang belajar melalui eksperimen serta membangun prototipe yang menghubungkan ide dengan penerapan nyata.</p>
+<div class="cta"><a class="btn pri" href="#proyek">Jelajahi Proyek</a><a class="btn" href="CV_Sirulahi_Al_Akbar.pdf" download id="cv">Unduh CV</a></div>
+</div>
+<div class="vis" id="vis" aria-hidden="true">
+<div class="board" data-d="4"></div>
+<svg viewBox="0 0 400 400" data-d="8" fill="none" stroke="currentColor" style="color:var(--blue)">
+<g stroke-width="3" stroke-linecap="round"><path d="M40 90h110v60h70M40 200h90M130 200v70h100M360 120h-90v60M360 300h-80v-50M200 40v60M200 360v-60"/></g>
+<rect x="150" y="130" width="100" height="100" rx="14" fill="var(--yel)" stroke="#14181F" stroke-width="3"/>
+<g stroke="#14181F" stroke-width="3" stroke-linecap="round"><path d="M170 130v-14M200 130v-14M230 130v-14M170 230v14M200 230v14M230 230v14M150 160h-14M150 180h-14M150 200h-14M250 160h14M250 180h14M250 200h14"/></g>
+<circle cx="200" cy="180" r="22" fill="var(--bg)" stroke="#14181F" stroke-width="3"/>
+<g fill="var(--cor)" stroke="#14181F" stroke-width="3"><circle cx="40" cy="90" r="9"/><circle cx="360" cy="120" r="9"/><circle cx="360" cy="300" r="9"/></g>
+<g fill="var(--mint)" stroke="#14181F" stroke-width="3"><circle cx="40" cy="200" r="9"/><circle cx="230" cy="270" r="9"/></g>
+</svg>
+<span class="tag t1" data-d="16">Arduino</span><span class="tag t2" data-d="-12">Sensor</span><span class="tag t3" data-d="-18">Alat Ukur</span><span class="tag t4" data-d="12">Otomasi</span>
+</div>
+</div></section>
+
+<section id="tentang"><div class="wrap about rv">
+<div>
+<h2 class="sec-h">Tentang Saya</h2>
+<p class="sec-p" style="margin-bottom:12px">Saya mahasiswa D4 Teknologi Rekayasa Elektro di Sekolah Vokasi UGM. Ketertarikan saya ada di elektronika, Arduino, sensor, otomasi, dan pemrograman.</p>
+<p class="sec-p" style="margin:0">Saya belajar dengan mencoba: merakit rangkaian, menulis kode untuk membaca sensor, lalu menyempurnakan prototipenya. Di luar kuliah, saya suka bermain catur dan menggambar.</p>
+<div class="cards4" id="infoCards"></div>
+</div>
+<div class="photo" role="img" aria-label="Tempat foto profil"><br></div>
+</div></section>
+
+<section id="keahlian" style="background:color-mix(in srgb,var(--lav) 10%,transparent)"><div class="wrap rv">
+<h2 class="sec-h">Keahlian dan Teknologi</h2>
+<p class="sec-p">Arahkan kursor atau fokuskan kartu untuk melihat penjelasan singkat. Status mengikuti data yang bisa Anda ubah.</p>
+<div class="tabs" id="skTabs" role="group" aria-label="Filter keahlian"></div>
+<div class="skills" id="skills"></div>
+</div></section>
+
+<section id="proyek"><div class="wrap rv">
+<h2 class="sec-h">Proyek dan Eksperimen</h2>
+<p class="sec-p">Empat prototipe sederhana berbasis Arduino yang pernah saya kerjakan.</p>
+<div class="tabs" id="pTabs" role="group" aria-label="Filter proyek"></div>
+<div class="tools">
+<input class="search" id="q" type="search" placeholder="Cari nama, deskripsi, atau teknologi" aria-label="Cari proyek">
+<div class="view" role="group" aria-label="Tampilan proyek"><button class="chip" data-v="grid" aria-pressed="true">Grid</button><button class="chip" data-v="list" aria-pressed="false">Daftar</button></div>
+</div>
+<p class="res" id="res" role="status" aria-live="polite"></p>
+<div class="grid" id="pgrid"></div>
+
+<div style="margin-top:72px">
+<h2 class="sec-h" style="font-size:clamp(1.6rem,4vw,2.4rem)">Radar Simulasi</h2>
+<p class="sec-p">Simulasi gaya sistem radar Arduino: servo menyapu 0–180° dan objek bergerak.</p>
+<div class="radar-box">
+<canvas id="radar" width="720" height="400" role="img" aria-label="Visualisasi radar simulasi dengan garis pemindaian dan objek bergerak"></canvas>
+<div class="rc">
+<button class="btn" id="rtoggle" aria-pressed="true">Hentikan</button>
+<label>Kecepatan <input type="range" id="rspeed" min="0.5" max="3" step="0.5" value="1.5" aria-label="Kecepatan animasi radar"></label>
+<div class="read" aria-live="off"><span id="rang">Sudut: –</span><span id="rdist">Jarak: –</span></div>
+</div>
+<p class="note">Data berasal dari simulasi di browser. Tidak ada perangkat Arduino atau sensor fisik yang terhubung.</p>
+</div></div>
+</div></section>
+
+<section id="kontak"><div class="wrap rv"><div class="contact">
+<h2 class="sec-h">Mari Terhubung dan Berkolaborasi</h2>
+<p class="sec-p">Punya ide, pertanyaan, atau ajakan kolaborasi? Kirim email atau temui saya di LinkedIn.</p>
+<p style="margin:0 0 18px;font-weight:700" id="mailTxt"></p>
+<div class="cta">
+<a class="btn fill" id="mail" href="#">Kirim email</a>
+<button class="btn" id="copy">Salin email</button>
+<a class="btn" id="li" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+<a class="btn" id="gh" target="_blank" rel="noopener noreferrer">GitHub</a>
+</div>
+</div></div></section>
+</main>
+
+<footer><div class="wrap ft">
+<div><b style="color:var(--ink)">Sirulahi Al Akbar</b></div>
+<nav aria-label="Navigasi footer"><a href="#beranda">Beranda</a><a href="#tentang">Tentang</a><a href="#keahlian">Keahlian</a><a href="#proyek">Proyek</a><a href="#kontak">Kontak</a></nav>
+<div id="fsoc" style="display:flex;gap:14px"></div>
+</div></footer>
+
+<button class="icon-btn" id="top" aria-label="Kembali ke atas">↑</button>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
